@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=KoHo:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=KoHo:wght@200&family=Playfair+Display&family=Poiret+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+<button style="float: right;" id="logout" class="glyphicon glyphicon-log-out btn" onclick="logout()">&nbsp;Logout</button>
+	<center>
+		<center><h1 class="header" style="font-family: 'Amatic SC', cursive; font-size: 100px;">	
+			&nbsp;&nbsp;&nbsp;&nbsp;Kwitter<span><img width="100" hieght="100" src="logo.png"></span></h1></center>
+		</h1>
+		<br>
+		<br>
+		<h3 style="font-size: 40px; font-family: 'KoHo', sans-serif;" id="user_name"></h3>
+		<br>
+		<div class="form-group input_div_room_page">
+			<h2 style="font-size: 40px; font-family: 'KoHo', sans-serif;" id="addUsername"></h2>
+			<br>
+			<br>
+			<div style="background-color: #d8e2dc; width: 1000px; height: 250px;" class="responsive">
+				<label style="font-size: 40px; font-family: 'KoHo', sans-serif;">Add Room:</label>
+				<br>
+				<br>
+				<br>
+			    <input type="text" id="room_name" style="width: 300px;" class="form-control" placeholder="Enter Room Name">
+				<br>
+				<br>
+				<button class="btn" onclick="addRoom()" style="background-color: white; width: 200px;">Add Room</button>	
+			</div>
+		</div>
+		</div>
+		<br>
+		<center>
+		<div style="background-color: #c5d6da; width: 1000px;">
+		<label style="font-size: 40px; font-family: 'KoHo', sans-serif;">Trending Rooms:</label>
+		<br>           
+		<br>
+		<br>
+		<br>
+		<div id="output">
+
+		</div>
+		</div
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
